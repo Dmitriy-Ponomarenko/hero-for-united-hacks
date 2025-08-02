@@ -224,21 +224,22 @@
 @keyframes subtleGlowPurple {
   0%,
   100% {
-    text-shadow: 0 0 2px #c084fc, 0 0 4px #a855f7, 0 0 6px #9333ea;
+    text-shadow: 0 0 3px #ba76fa;
   }
   50% {
-    text-shadow: 0 0 3px #c084fc, 0 0 6px #a855f7, 0 0 8px #9333ea;
+    text-shadow: 0 0 6px #ba76fa;
   }
 }
 
 .participantsCounter {
   color: #c084fc;
+  animation: subtleGlowPurple 4s ease-in-out infinite;
 }
 
 .awardedAmount {
   color: #f2c94c; /* warm yellow */
   font-weight: 700;
-  text-shadow: 0 0 2px #f2c94c;
+  text-shadow: 0 0 3px #f2c94c;
   animation: subtleGlowYellow 3s ease-in-out infinite;
 }
 
@@ -253,7 +254,7 @@
     text-shadow: 0 0 1.5px #f2c94c;
   }
   50% {
-    text-shadow: 0 0 4px #f2c94c;
+    text-shadow: 0 0 6px #f2c94c;
   }
 }
 
@@ -279,7 +280,7 @@
     text-shadow: 0 0 1.5px #6ea8ff;
   }
   50% {
-    text-shadow: 0 0 4px #6ea8ff;
+    text-shadow: 0 0 6px #6ea8ff;
   }
 }
 

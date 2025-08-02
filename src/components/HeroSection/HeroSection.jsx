@@ -85,7 +85,7 @@ export const HeroSection = () => {
               />
               <CountUp
                 end={4839}
-                duration={5}
+                duration={7}
                 separator=","
                 className={styles.participantsCounter}
               />
@@ -97,7 +97,7 @@ export const HeroSection = () => {
               />
               <div className={styles.awardedAmount}>
                 $
-                <CountUp end={530000} duration={5} separator="," />
+                <CountUp end={530000} duration={7} separator="," />
               </div>
               <span>Awarded</span>
             </div>
@@ -106,7 +106,7 @@ export const HeroSection = () => {
                 className={`${styles.statIcon} ${styles.countriesIcon}`}
               />
               <div className={styles.countriesWrapper}>
-                <CountUp end={100} duration={5} />
+                <CountUp end={100} duration={7} />
                 <span className={styles.countriesPlus}>+</span>
               </div>
               <span>Countries</span>
