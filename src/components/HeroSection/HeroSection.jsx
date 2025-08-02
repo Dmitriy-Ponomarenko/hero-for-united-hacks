@@ -54,9 +54,9 @@ export const HeroSection = () => {
               src="/globe-icon.png"
               alt="Hack United Illustration"
               className={styles.heroImage}
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.2 }}
+              initial={{ opacity: 0, scale: 0.9, y: -40 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 1.5, delay: 0.4 }}
             />
           </Tilt>
         </div>

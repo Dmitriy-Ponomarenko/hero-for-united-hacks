@@ -331,6 +331,19 @@
   .heroSection {
     min-height: calc(100vh + 50px);
     padding-top: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .heroContainer {
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
   }
 
   .heroContainer {
@@ -356,11 +369,29 @@
   }
 
   .heroImageWrapper {
-    margin-left: 70px;
-    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .heroTitleWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* можно поменять на flex-start если нужен левый текст */
+    justify-content: center;
+    text-align: center; /* или left */
   }
 
   .heroImage {
+    width: 350px;
+    max-width: 350px;
+  }
+
+  .buttonGroup {
+    gap: 24px;
     width: 100%;
   }
 }
