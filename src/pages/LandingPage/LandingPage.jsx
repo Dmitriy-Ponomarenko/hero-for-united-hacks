@@ -5,7 +5,6 @@ import styles from './LandingPage.module.css';
 import '../../index.css';
 import { Header } from '../../components/Header/Header';
 import { HeroSection } from '../../components/HeroSection/HeroSection';
-import { Other } from '../../components/Other/Other';
 
 export const LandingPage = () => {
   return (
@@ -13,7 +12,6 @@ export const LandingPage = () => {
       <div className={`${styles.homeContainer}`}>
         <Header />
         <HeroSection />
-        <Other />
       </div>
     </section>
   );
