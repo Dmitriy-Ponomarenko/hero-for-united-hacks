@@ -4,6 +4,7 @@ import '../../index.css';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import { FaUsers, FaGlobeAmericas, FaTrophy } from 'react-icons/fa';
+import Tilt from 'react-parallax-tilt';
 
 const PARTICLE_COUNT = 30;
 
@@ -40,16 +41,24 @@ export const HeroSection = () => {
       </div>
 
       <div className={styles.heroContainer}>
-        <div className={styles.heroImageWrapper}>
-          {/* Globe Icon */}
-          <motion.img
-            src="/globe-icon.png"
-            alt="Hack United Illustration"
-            className={styles.heroImage}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2 }}
-          />
+        <div className={styles.heroContainer}>
+          <Tilt
+            className={styles.heroImageWrapper}
+            perspective={800} // depth of effect
+            glareEnable={true} // optional: adds glare
+            glareMaxOpacity={0.3}
+            scale={1.05} // zoom on hover
+            transitionSpeed={2000} // smoothness
+          >
+            <motion.img
+              src="/globe-icon.png"
+              alt="Hack United Illustration"
+              className={styles.heroImage}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.2 }}
+            />
+          </Tilt>
         </div>
         <div className={styles.heroTitleWrapper}>
           {/* Title */}

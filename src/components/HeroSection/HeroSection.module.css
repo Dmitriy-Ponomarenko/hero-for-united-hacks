@@ -218,6 +218,8 @@
 
 .heroImageWrapper {
   user-select: none;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 /* Hero image glow */
 .heroImage {
@@ -347,6 +349,15 @@
 
   .statItem {
     font-size: 2rem;
+  }
+
+  .statIcon {
+    font-size: 3rem;
+  }
+
+  .heroImageWrapper {
+    margin-left: 70px;
+    margin-top: 60px;
   }
 
   .heroImage {
