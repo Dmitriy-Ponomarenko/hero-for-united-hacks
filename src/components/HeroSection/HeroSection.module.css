@@ -11,7 +11,6 @@
   margin-top: -100px;
 }
 
-/* Gradient animation overlay */
 .animatedBg {
   position: absolute;
   top: 0;
@@ -41,7 +40,6 @@
   }
 }
 
-/* Particles with glow */
 .particles {
   position: absolute;
   width: 100%;
@@ -93,7 +91,6 @@
   }
 }
 
-/* Glow for hero container */
 .heroContainer {
   position: relative;
   z-index: 1;
@@ -107,7 +104,6 @@
   padding: 20px 20px 25px;
 }
 
-/* Title with glow */
 .heroTitle {
   display: flex;
   font-size: 2.5rem;
@@ -122,7 +118,6 @@
     0 0 20px rgba(154, 38, 255, 0.37);
 }
 
-/* Subtitle */
 .heroSubtitle {
   display: flex;
   justify-self: end;
@@ -134,7 +129,6 @@
   color: var(--light-gray);
 }
 
-/* Stats section */
 .stats {
   display: flex;
   flex-direction: row;
@@ -161,7 +155,6 @@
   filter: drop-shadow(0 0 6px rgba(208, 79, 255, 0.6));
 }
 
-/* Buttons with neon hover */
 .buttonGroup {
   display: flex;
   gap: 16px;
@@ -221,7 +214,7 @@
   transform-style: preserve-3d;
   will-change: transform;
 }
-/* Hero image glow */
+
 .heroImage {
   width: 200px;
   margin-bottom: 16px;
@@ -229,7 +222,7 @@
 }
 
 .participantsGlow {
-  color: #c084fc; /* фиолетовый тон */
+  color: #c084fc;
   animation: subtleGlowPurple 4s ease-in-out infinite;
 }
 
@@ -249,7 +242,7 @@
 }
 
 .awardedAmount {
-  color: #f2c94c; /* warm yellow */
+  color: #f2c94c;
   font-weight: 700;
   text-shadow: 0 0 3px #f2c94c;
   animation: subtleGlowYellow 3s ease-in-out infinite;
@@ -272,7 +265,7 @@
 
 .countriesWrapper {
   margin-left: 4px;
-  color: #6ea8ff; /* light blue tone */
+  color: #6ea8ff;
   text-shadow: 0 0 2px #6ea8ff;
   animation: subtleGlowBlue 3s ease-in-out infinite;
 }
@@ -296,7 +289,6 @@
   }
 }
 
-/* Responsive */
 @media screen and (min-width: 768px) {
   .heroContainer {
     max-width: 700px;
@@ -330,10 +322,7 @@
 @media screen and (min-width: 1280px) {
   .heroSection {
     min-height: calc(100vh + 50px);
-    padding-top: 74px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 70px;
   }
 
   .heroContainer {
@@ -348,7 +337,6 @@
 
   .heroContainer {
     flex-direction: row-reverse;
-    max-width: 1000px;
   }
 
   .heroTitle {
@@ -369,25 +357,26 @@
   }
 
   .heroImageWrapper {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
-    margin-top: 50px;
   }
 
   .heroTitleWrapper {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* можно поменять на flex-start если нужен левый текст */
+    align-items: flex-start;
     justify-content: center;
-    text-align: center; /* или left */
+    text-align: center;
   }
 
   .heroImage {
-    width: 350px;
-    max-width: 350px;
+    width: 500px;
+
+    max-width: 500px;
   }
 
   .buttonGroup {

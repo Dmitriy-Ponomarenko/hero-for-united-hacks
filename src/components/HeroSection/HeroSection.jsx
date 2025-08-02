@@ -21,7 +21,6 @@ export const HeroSection = () => {
 
   return (
     <section className={styles.heroSection}>
-      {/* Animated Background Overlay */}
       <div className={styles.animatedBg}></div>
       <div className={styles.particles}>
         {particles.map((p, i) => (
@@ -41,25 +40,23 @@ export const HeroSection = () => {
       </div>
 
       <div className={styles.heroContainer}>
-        <div className={styles.heroContainer}>
-          <Tilt
-            className={styles.heroImageWrapper}
-            perspective={800} // depth of effect
-            glareEnable={true} // optional: adds glare
-            glareMaxOpacity={0.3}
-            scale={1.05} // zoom on hover
-            transitionSpeed={2000} // smoothness
-          >
-            <motion.img
-              src="/globe-icon.png"
-              alt="Hack United Illustration"
-              className={styles.heroImage}
-              initial={{ opacity: 0, scale: 0.9, y: -40 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 1.5, delay: 0.4 }}
-            />
-          </Tilt>
-        </div>
+        <Tilt
+          className={styles.heroImageWrapper}
+          perspective={800}
+          glareEnable={true}
+          glareMaxOpacity={0.3}
+          scale={1.05}
+          transitionSpeed={2000}
+        >
+          <motion.img
+            src="/globe-icon.png"
+            alt="Hack United Illustration"
+            className={styles.heroImage}
+            initial={{ opacity: 0, scale: 0.9, y: -40 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: 0.4 }}
+          />
+        </Tilt>
         <div className={styles.heroTitleWrapper}>
           {/* Title */}
           <motion.h1

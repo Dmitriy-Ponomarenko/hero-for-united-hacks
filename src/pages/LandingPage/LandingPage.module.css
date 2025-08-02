@@ -1,6 +1,6 @@
 .homeSection {
-  height: 100vh; /* Ограничиваем высоту экрана */
-  overflow-y: hidden; /* Убираем вертикальный скролл */
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 @media screen and (min-width: 768px) {
