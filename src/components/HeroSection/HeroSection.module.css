@@ -181,6 +181,8 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .primaryButton {
@@ -198,12 +200,20 @@
   background: transparent;
   border: 2px solid #d04fff;
   color: #d04fff;
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background-position 0.5s ease, transform 0.3s ease,
+    box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .secondaryButton:hover {
-  background: rgba(208, 79, 255, 0.1);
+  background: linear-gradient(90deg, #8225d5, #d04fff);
+  background-size: 200% 100%;
+  border-color: transparent;
+  background-position: 100% 0;
   transform: scale(1.05);
   box-shadow: 0 0 15px rgba(208, 79, 255, 0.5);
+  color: var(--white);
 }
 
 .heroImageWrapper {
